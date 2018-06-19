@@ -1,67 +1,121 @@
-
-
-.name {
-    background: #12e0e8;
-    font-size: 15px;
-    padding: 4px;
-    color: white;
-    float: left;
-    left: 400px
+* {
+    box-sizing: border-box;
 }
 
-.header {
-    background: #999;
-    width: 100%;
-    float: left;
-}
-
-.about {
-    float: right;
-    background: #eee;
-    height: 20px;
-    padding: 4px
-}
-
-.portfolio {
-    float: right;
-    background: #eee;
-    height: 20px;
-    padding: 4px
-}
-
-.contact {
-    float: right;
-    background: #eee;
-    height: 20px;
-    padding: 4px
-}
-
-.frame {
-    background: #eeeeee;
-    width: 960px;
+.row {
     margin: auto;
-    bottom: 0px;
-    border: 4px;
-    clear: left;
+    width: 50%;
+}
 
+.h1 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 50px;
 }
 
 .bio-image {
     float: left;
     width: 125px;
-    padding-right: 15;
+    padding-right: 25px;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  .h2 {
-      color: #12e0e8;
-  }
-
-  .h1 {
-    background-color: #12e0e8;
+.line-padding {
+    padding-bottom: 8px;
 }
+
+.myart {
+    width: 150px;
+    border-radius: 10px;
+    
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: lightgray;
+    border-top: 5px solid black;    
+}
+
+.container {
+    position: relative;
+    top: 150px;
+    padding: 0px 0px 50px 0px;
+    background-color: white;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin: 0px 300px 300px 300px;
+}
+
+.navbar {
+    z-index: 1;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: lightgray;
+    border-bottom: 5px solid black; 
+}
+
+.form-control {
+    margin: auto;
+    width: auto;
+}
+
+/* Media Queries */
+
+@media  (max-width: 640px) {
+    header { 
+        width: 145px; 
+        height: 60px; 
+        top: 140px; 
+        left: 48%;
+    }
+	nav { 
+        padding-top: 80px; }
+    /* nav > ul { padding-left: 10px; } */
+    container {
+        width: auto;
+        position: relative;
+        top: 50px;
+        padding: 0px 0px 50px 0px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 50px;
+    }
+
+    row { 
+        top: 140px; left: 48%;}
+    body { 
+        background-color: lightblue;}
+        .form-control {
+            margin: auto;
+            width: 50%;
+        }
+}
+
+
+
+    
+
+@media (max-width: 768px) { 
+	h1 { font-size: 2.2em; }
+	header { height: 62%; background-image: url(../images/Background.jpg); }
+    container {  width: auto;}
+}
+
+@media (max-width: 980px) { 
+	header { left: 56%; }
+    header h1 { margin-bottom: 20px; }
+    container {  width: auto;}
+}
+
